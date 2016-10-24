@@ -1,0 +1,26 @@
+{
+  "name": "gitbook-plugin-mdx-components",
+  "version": "0.1.0",
+  "description": "components for markedx",
+  "main": "lib/index.js",
+  "engines": {
+    "gitbook": "*"
+  },
+  "repository": {
+    "url": "https://github.com/9dots/gitbook-plugin-mdx-components.git",
+    "type": "git"
+  },
+  "author": "Daniel <danleavitt0@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@f/foreach": "^1.2.2",
+    "markedx": "0.1.4",
+    "vdux": "^2.4.10",
+    "vdux-ui": "^1.2.36"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0"
+  }
+}
