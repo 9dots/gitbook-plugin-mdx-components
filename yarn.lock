@@ -1478,9 +1478,9 @@ marked@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
 
-markedx@0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/markedx/-/markedx-0.1.4.tgz#58f4b4076f96564a59e6634421bb3d932a826591"
+markedx:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/markedx/-/markedx-0.1.6.tgz#a32ea9a406cceb3bd286e5b4f51c51fa5c9e311f"
   dependencies:
     "@f/map" "^1.5.3"
     "@f/self-closing-tags" "^1.0.1"
@@ -1495,6 +1495,7 @@ markedx@0.1.4:
     hyperx "^2.0.5"
     marked "^0.3.6"
     vdux "^2.4.10"
+    vdux-ui "^1.2.36"
 
 mini-hamt@^1.0.1:
   version "1.0.3"
