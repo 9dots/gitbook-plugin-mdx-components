@@ -965,7 +965,7 @@ babel-plugin-transform-exponentiation-operator@^6.3.13:
     babel-plugin-syntax-exponentiation-operator "^6.8.0"
     babel-runtime "^6.0.0"
 
-babel-plugin-transform-mdx@^0.1.2, babel-plugin-transform-mdx@^0.1.3:
+babel-plugin-transform-mdx@^0.1.3, babel-plugin-transform-mdx@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-mdx/-/babel-plugin-transform-mdx-0.1.4.tgz#3cd48822c0ff543168fd2ec96d10ef1c8a20c23c"
   dependencies:
@@ -1478,15 +1478,15 @@ marked@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
 
-markedx:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/markedx/-/markedx-0.1.6.tgz#a32ea9a406cceb3bd286e5b4f51c51fa5c9e311f"
+markedx@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/markedx/-/markedx-0.1.7.tgz#29e4852e6f9f725de137d1274b1f95ef62f11e6e"
   dependencies:
     "@f/map" "^1.5.3"
     "@f/self-closing-tags" "^1.0.1"
     "@f/stringify-attrs" "^1.0.4"
     babel-core "^6.17.0"
-    babel-plugin-transform-mdx "^0.1.2"
+    babel-plugin-transform-mdx "^0.1.4"
     babel-plugin-transform-react-jsx "^6.8.0"
     babel-preset-es2015 "^6.16.0"
     babel-preset-stage-2 "^6.17.0"
