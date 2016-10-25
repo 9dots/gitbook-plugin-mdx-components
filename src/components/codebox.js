@@ -5,7 +5,7 @@ import marked from 'marked'
 function render ({props, children}) {
   const codeblock = `\`\`\`js\n${children[0].props.nodeValue}\n\`\`\``
   return (
-    <Block innerHTML={marked(codeblock)} {...props}/>
+    <Block lineHeight='1' innerHTML={marked(codeblock)} {...props}/>
   )
 }
 

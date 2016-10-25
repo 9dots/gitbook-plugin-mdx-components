@@ -12,7 +12,21 @@ test('it should work for codeblock', (t) => {
   t.end()
 })
 
-test.only('it should work with markdown inside', (t) => {
-  console.log(markedx('<page>### stuff\n1. one\n2. two\n<header title="test" subtitle="subtest"/></page>'))
+test('it should work for notable', (t) => {
+  console.log(markedx('<notable>### header\ntext under header\n<note>more text</note>\n### new section\n writing stuff</notable>'))
   t.end()
 })
+
+test('it should work for iconp', (t) => {
+  console.log(markedx('<iconp icon="star">### header</iconp>'))
+  t.end()
+})
+
+test.only('it should work for indented checkboxes', (t) => {
+  console.log(testPage === '- [ ] one\n\t- [ ] two')
+  console.log(markedx('- [ ] one\n\t- [ ] two'), markedx(testPage))
+  t.end()
+})
+
+var testPage = `- [ ] one
+  - [ ] two`
