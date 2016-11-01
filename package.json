@@ -25,7 +25,6 @@
     "@f/foreach": "^1.2.2",
     "@f/switch": "^1.0.1",
     "babel-plugin-transform-mdx": "^0.1.4",
-    "enroute": "^1.0.1",
     "markedx": "0.1.14",
     "vdux": "^2.4.10",
     "vdux-ui": "^1.2.36"

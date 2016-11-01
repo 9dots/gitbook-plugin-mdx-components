@@ -4,7 +4,6 @@ import codebox from './codebox'
 import header from './header'
 import iconp from './iconp'
 import note from './note'
-import tip from './tip'
 
 export {
 	pagebreak,
@@ -12,6 +11,5 @@ export {
   codebox,
   header,
   iconp,
-  note,
-  tip
+  note
 }
