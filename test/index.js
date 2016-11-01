@@ -23,8 +23,15 @@ test('it should work for iconp', (t) => {
 })
 
 test.only('it should work for indented checkboxes', (t) => {
-  console.log(testPage === '- [ ] one\n\t- [ ] two')
-  console.log(markedx('- [ ] one\n\t- [ ] two'), markedx(testPage))
+  console.log(markedx(`
+1. **Do Now (10 min)**
+1. **Small Group Lesson (17 min)**
+  1. **Engage:** Sequence Through a Maze (5 min) 
+  2. **Explore & Explain:** Introducing Loops (7 min) 
+  3. **Elaborate:** Examples in the Real World (5 min) 
+  4. **Extension:** Coding the Enemy (10 min)
+2. **Independent Coding Practice:**
+  1. **https://studio.code.org/s/course2/stage/3/puzzle/1 **`))
   t.end()
 })
 

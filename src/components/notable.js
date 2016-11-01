@@ -3,7 +3,7 @@ import {Block, Box} from 'vdux-ui'
 import {Marked} from 'markedx'
 import Switch from '@f/switch'
 
-var re = /(^\#\s)|(^\#\#\s)|(^\#\#\#\s)/gmi
+var re = /(^\#\s)|(^\#\#\s)|(^\#\#\#\s)|(^-\s\[.\])/gmi
 
 function render ({props, children}) {
   const modChildren = children.reduce((arr, child, i) => {
@@ -15,12 +15,12 @@ function render ({props, children}) {
   }, [])
 
   return (
-    <Block margin='0 auto' maxWidth='75%' p='20px 15px 40px 15px' {...props}>
+    <Block class='notable' margin='0 auto' p='20px 15px 40px 15px' {...props}>
       {modChildren.map(({header, main, right}) => (
         <Block>
           <Block align='center start'>
             <Box flex><Marked>{main}</Marked></Box>
-            <Block align='center center' w='33%'>{right}</Block>
+            {(right && right.length > 0) || main[0].type === 'hr' ? right : <Block ml='40px' w='33%'/>}
           </Block>
         </Block>
       ))}
@@ -39,7 +39,14 @@ function addText (arr, child, idx) {
       {main: [child], right: []}
     ]
   } else {
-    arr[idx].main.push(child)
+    if (arr[idx]) {
+      arr[idx].main.push(child)
+    } else {
+      return [
+        ...arr,
+        {main: [child], right: []}
+      ]
+    }
     return arr
   }
 }
@@ -49,8 +56,15 @@ function addElement (arr, child, idx) {
     arr[idx].right.push(child)
     return arr
   }
-  arr[idx].main.push(child)
-  return arr
+  if (!arr[idx] || (child.props && child.props.section)) {
+    return [
+      ...arr,
+      {main: [child], right: []}
+    ]
+  } else {
+    arr[idx].main.push(child)
+    return arr
+  }
 }
 
 

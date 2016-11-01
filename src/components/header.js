@@ -3,6 +3,7 @@ import element from 'vdux/element'
 
 function render ({props, children}) {
   const {title, subtitle, icon, bgColor = '#FFA5AB'} = props
+
   return (
     <Block
       relative
@@ -10,6 +11,7 @@ function render ({props, children}) {
       left='0'
       h='40vh'
       wide
+      class='header'
       align='center center'
       minHeight='400px'
       bgColor={bgColor}
