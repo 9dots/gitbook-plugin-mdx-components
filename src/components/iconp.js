@@ -34,7 +34,7 @@ function render ({props, children}) {
   return (
     <Block ml={(icon || type) && '3.5em'} color={type ? types[type].color : 'inherit'} align={src ? 'start center' : 'start start'} {...props}>
       {(icon || type) && <Icon mr='5px' lineHeight='1.1' name={type ? types[type].icon : icon}/>}
-      {src && <Avatar mr='10px' size='50' src={src}/>}
+      {src && <Avatar mr='10px' mt='10px' size='50' src={src}/>}
       <Box align='start start' flex><Marked style={{display: 'flex'}}>{children}</Marked></Box>
     </Block>
   )
