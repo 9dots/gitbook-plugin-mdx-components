@@ -17,8 +17,8 @@ function render ({props, children}) {
       bgColor={bgColor}
       column>
       <Block align='center center' column>
-        <Text color='white' fs='xxl' fontWeight='800'>{title}</Text>
-        <Text color='#333' fs='m'>{subtitle}</Text>
+        <Text textAlign='center' color='white' fs='xxl' fontWeight='800'>{title}</Text>
+        <Text textAlign='center' color='#333' fs='m'>{subtitle}</Text>
       </Block>
     </Block>
   )
